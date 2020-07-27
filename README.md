@@ -12,3 +12,7 @@ Ping Pong Game Using C++ and SDL
 - Open the project in Visual Studio Commuinty
 - Build and Run
 
+#### Game Control
+- Use **Up** and **Down** arrows to move the right paddle
+- Use **W** and **S** keys to move the left paddle
+
