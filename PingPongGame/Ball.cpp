@@ -20,6 +20,10 @@ void Ball::initBall()
 
 void Ball::showBall(SDL_Renderer* mRenderer)
 {
+	// draw the ball
+	SDL_SetRenderDrawColor(mRenderer, 0, 255, 0, 255);
+	SDL_Rect ball{ mBallPos.x, mBallPos.y, thickness, thickness };
+	SDL_RenderFillRect(mRenderer, &ball);
 }
 
 void Ball::updateBall(float deltaTime)
