@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "Paddle.h"
 
 Game::Game() :
     mWindow(nullptr),
