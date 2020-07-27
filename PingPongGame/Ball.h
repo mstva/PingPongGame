@@ -4,5 +4,8 @@
 
 class Ball
 {
+public:
+	// constractor
+	Ball();
 };
 
