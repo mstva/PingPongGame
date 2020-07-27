@@ -1,4 +1,7 @@
 #pragma once
+#include "SDL.h"
+#include "Constants.h"
+
 class Game
 {
 public:
@@ -15,5 +18,13 @@ private:
 	void processInput();
 	void updateGame();
 	void renderGame();
+
+	// private varible
+	SDL_Window* mWindow;
+	SDL_Renderer* mRenderer;
+
+	// game logic
+	bool isRunning;
+	Uint32 mTicksCount;
 };
 
