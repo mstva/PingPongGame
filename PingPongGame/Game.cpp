@@ -3,6 +3,7 @@
 #include "Ball.h"
 
 Paddle paddle;
+Ball ball;
 
 Game::Game() :
     mWindow(nullptr),
