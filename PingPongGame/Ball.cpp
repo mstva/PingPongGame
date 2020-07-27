@@ -49,4 +49,10 @@ void Ball::updateBall(float deltaTime)
 	{
 		mBallVel.y *= -1;
 	}
+
+	// collide with the right wall
+	else if (mBallPos.x <= thickness && mBallVel.x < 0)
+	{
+		mBallVel.x *= -1;
+	}
 }
