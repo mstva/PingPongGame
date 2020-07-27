@@ -20,6 +20,20 @@ void Paddle::initPaddle()
 
 void Paddle::showPaddle(SDL_Renderer* mRenderer, std::string dir)
 {
+    // draw the paddle
+    SDL_SetRenderDrawColor(mRenderer, 0, 255, 0, 255);
+    SDL_Rect paddle;
+
+    if (dir == "right")
+    {
+        paddle = { mPaddlePosRight.x, mPaddlePosRight.y, thickness, paddleH };
+    }
+    if (dir == "left")
+    {
+        paddle = { mPaddlePosLeft.x, mPaddlePosLeft.y, thickness, paddleH };
+    }
+
+    SDL_RenderFillRect(mRenderer, &paddle);
 }
 
 void Paddle::movePaddle()
