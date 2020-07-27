@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "Paddle.h"
+#include "Ball.h"
 
 Paddle paddle;
 
