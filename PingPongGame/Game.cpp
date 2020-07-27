@@ -97,6 +97,10 @@ void Game::updateGame()
     if (deltaTime > 0.05f) { deltaTime = 0.05f; }
 
     mTicksCount = SDL_GetTicks();
+
+    // update paddle position
+    paddle.updatePaddle(deltaTime, "right");
+    paddle.updatePaddle(deltaTime, "left");
 }
 
 void Game::renderGame()
