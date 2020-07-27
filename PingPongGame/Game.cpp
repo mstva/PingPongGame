@@ -109,6 +109,10 @@ void Game::renderGame()
     SDL_SetRenderDrawColor(mRenderer, 80, 50, 15, 255);
     SDL_RenderClear(mRenderer);
 
+    // draw the paddle
+    paddle.showPaddle(mRenderer, "right");
+    paddle.showPaddle(mRenderer, "left");
+
     // present the render on the screen
     SDL_RenderPresent(mRenderer);
 }
