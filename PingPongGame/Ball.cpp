@@ -28,4 +28,7 @@ void Ball::showBall(SDL_Renderer* mRenderer)
 
 void Ball::updateBall(float deltaTime)
 {
+	//update ball position
+	mBallPos.x += mBallVel.x * deltaTime;
+	mBallPos.y += mBallVel.y * deltaTime;
 }
