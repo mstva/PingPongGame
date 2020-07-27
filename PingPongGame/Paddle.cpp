@@ -38,6 +38,15 @@ void Paddle::showPaddle(SDL_Renderer* mRenderer, std::string dir)
 
 void Paddle::movePaddle()
 {
+    const Uint8* state = SDL_GetKeyboardState(NULL);
+
+    mPaddleDirRight = 0;
+    if (state[SDL_SCANCODE_W]) { mPaddleDirRight -= 1; }
+    if (state[SDL_SCANCODE_S]) { mPaddleDirRight += 1; }
+
+    mPaddleDirLeft = 0;
+    if (state[SDL_SCANCODE_UP]) { mPaddleDirLeft -= 1; }
+    if (state[SDL_SCANCODE_DOWN]) { mPaddleDirLeft += 1; }
 }
 
 void Paddle::updatePaddle(float deltaTime, std::string dir)
