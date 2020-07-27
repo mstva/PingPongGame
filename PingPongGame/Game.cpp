@@ -50,6 +50,16 @@ void Game::runGame()
 
 void Game::processInput()
 {
+    SDL_Event event;
+    while (SDL_PollEvent(&event))
+    {
+        switch (event.type)
+        {
+        case SDL_QUIT:
+            isRunning = false;
+            break;
+        }
+    }
 }
 
 void Game::updateGame()
