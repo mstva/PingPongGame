@@ -121,6 +121,9 @@ void Game::renderGame()
     paddle.showPaddle(mRenderer, "right");
     paddle.showPaddle(mRenderer, "left");
 
+    // draw the ball
+    ball.showBall(mRenderer);
+
     // present the render on the screen
     SDL_RenderPresent(mRenderer);
 }
