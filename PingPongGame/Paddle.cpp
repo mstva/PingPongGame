@@ -1,4 +1,5 @@
 #include "Paddle.h"
+#include "Game.h"
 
 Paddle::Paddle() :
     mPaddlePosRight(),
