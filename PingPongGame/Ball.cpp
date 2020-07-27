@@ -31,4 +31,10 @@ void Ball::updateBall(float deltaTime)
 	//update ball position
 	mBallPos.x += mBallVel.x * deltaTime;
 	mBallPos.y += mBallVel.y * deltaTime;
+
+	// collide with the top wall
+	if (mBallPos.y <= thickness && mBallVel.y < 0)
+	{
+		mBallVel.y *= -1;
+	}
 }
