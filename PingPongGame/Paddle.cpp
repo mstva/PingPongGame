@@ -75,7 +75,6 @@ void Paddle::updatePaddle(float deltaTime, std::string dir)
         // update paddle position
         if (mPaddleDirLeft != 0)
         {
-
             mPaddlePosLeft.y += mPaddleDirLeft * speed * deltaTime;
 
             if (mPaddlePosLeft.y < thickness)
