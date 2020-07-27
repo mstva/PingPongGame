@@ -49,6 +49,9 @@ bool Game::initGame()
         return false;
     }
 
+    // initialize paddle
+    paddle.initPaddle();
+
     return true;
 }
 
