@@ -56,7 +56,6 @@ void Paddle::updatePaddle(float deltaTime, std::string dir)
         // update paddle position
         if (mPaddleDirRight != 0)
         {
-
             mPaddlePosRight.y += mPaddleDirRight * speed * deltaTime;
 
             if (mPaddlePosRight.y < thickness)
@@ -67,6 +66,26 @@ void Paddle::updatePaddle(float deltaTime, std::string dir)
             else if (mPaddlePosRight.y > (HIEGHT - paddleH - thickness))
             {
                 mPaddlePosRight.y = HIEGHT - paddleH - thickness;
+            }
+        }
+    }
+
+    if (dir == "left")
+    {
+        // update paddle position
+        if (mPaddleDirLeft != 0)
+        {
+
+            mPaddlePosLeft.y += mPaddleDirLeft * speed * deltaTime;
+
+            if (mPaddlePosLeft.y < thickness)
+            {
+                mPaddlePosLeft.y = thickness;
+            }
+
+            else if (mPaddlePosLeft.y > (HIEGHT - paddleH - thickness))
+            {
+                mPaddlePosLeft.y = HIEGHT - paddleH - thickness;
             }
         }
     }
