@@ -51,4 +51,23 @@ void Paddle::movePaddle()
 
 void Paddle::updatePaddle(float deltaTime, std::string dir)
 {
+    if (dir == "right")
+    {
+        // update paddle position
+        if (mPaddleDirRight != 0)
+        {
+
+            mPaddlePosRight.y += mPaddleDirRight * speed * deltaTime;
+
+            if (mPaddlePosRight.y < thickness)
+            {
+                mPaddlePosRight.y = thickness;
+            }
+
+            else if (mPaddlePosRight.y > (HIEGHT - paddleH - thickness))
+            {
+                mPaddlePosRight.y = HIEGHT - paddleH - thickness;
+            }
+        }
+    }
 }
