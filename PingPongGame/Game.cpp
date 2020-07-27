@@ -46,6 +46,12 @@ void Game::closeGame()
 
 void Game::runGame()
 {
+    while (isRunning)
+    {
+        processInput();
+        updateGame();
+        renderGame();
+    }
 }
 
 void Game::processInput()
