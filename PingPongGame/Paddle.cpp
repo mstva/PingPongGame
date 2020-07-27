@@ -1,6 +1,10 @@
 #include "Paddle.h"
 
-Paddle::Paddle()
+Paddle::Paddle() :
+    mPaddlePosRight(),
+    mPaddlePosLeft(),
+    mPaddleDirRight(0),
+    mPaddleDirLeft(0)
 {
 }
 
