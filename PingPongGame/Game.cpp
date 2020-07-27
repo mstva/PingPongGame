@@ -106,6 +106,9 @@ void Game::updateGame()
     // update paddle position
     paddle.updatePaddle(deltaTime, "right");
     paddle.updatePaddle(deltaTime, "left");
+
+    // update ball position
+    ball.updateBall(deltaTime);
 }
 
 void Game::renderGame()
