@@ -16,11 +16,6 @@ public:
 	void movePaddle();
 	void updatePaddle(float deltaTime, std::string dir);
 
-private:
-	// private game logic variables
-	int mPaddleDirRight;
-	int mPaddleDirLeft;
-	Vector2 mPaddlePosRight;
-	Vector2 mPaddlePosLeft;
+
 };
 
