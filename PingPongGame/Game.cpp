@@ -84,6 +84,8 @@ void Game::processInput()
             break;
         }
     }
+
+    paddle.movePaddle();
 }
 
 void Game::updateGame()
