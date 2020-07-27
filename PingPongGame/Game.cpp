@@ -1,6 +1,8 @@
 #include "Game.h"
 #include "Paddle.h"
 
+Paddle paddle;
+
 Game::Game() :
     mWindow(nullptr),
     mRenderer(nullptr),
