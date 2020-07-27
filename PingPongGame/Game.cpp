@@ -54,6 +54,9 @@ bool Game::initGame()
     // initialize paddle
     paddle.initPaddle();
 
+    // initialize ball
+    ball.initBall();
+
     return true;
 }
 
