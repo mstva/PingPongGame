@@ -11,6 +11,11 @@ Paddle::Paddle() :
 
 void Paddle::initPaddle()
 {
+    mPaddlePosRight.x = 0;
+    mPaddlePosRight.y = HIEGHT / 2;
+
+    mPaddlePosLeft.x = WIDTH - thickness;
+    mPaddlePosLeft.y = HIEGHT / 2;
 }
 
 void Paddle::showPaddle(SDL_Renderer* mRenderer, std::string dir)
