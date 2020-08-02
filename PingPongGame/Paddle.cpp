@@ -49,6 +49,12 @@ void Paddle::movePaddle()
     if (state[SDL_SCANCODE_DOWN]) { mPaddleDirLeft += 1; }
 }
 
+Vector2 Paddle::getPaddlePosition(std::string dir)
+{
+    if (dir == "right") { return mPaddlePosRight; }
+    if (dir == "left") { return mPaddlePosLeft; }
+}
+
 void Paddle::updatePaddle(float deltaTime, std::string dir)
 {
     if (dir == "right")
