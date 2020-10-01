@@ -1,7 +1,7 @@
 ## PingPongGame
 Ping Pong Game Using C++ and SDL
 
-#### Requirement
+#### Requirements
 - C++
 - SDL2 Library
 - Visual Studio Commuinty 2019
