@@ -51,8 +51,13 @@ void Ball::updateBall(float deltaTime)
 	}
 
 	// collide with the right wall
-	else if (mBallPos.x <= thickness && mBallVel.x < 0)
+	else if (mBallPos.x <= 0 && mBallVel.x < 0)
 	{
 		mBallVel.x *= -1;
 	}
+}
+
+Vector2 Ball::getBallPos()
+{
+	return mBallPos;
 }
