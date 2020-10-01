@@ -109,6 +109,10 @@ void Game::updateGame()
 
     // update ball position
     ball.updateBall(deltaTime);
+
+    // get the paddle position
+    paddle.getPaddlePosition("right");
+    paddle.getPaddlePosition("left");
 }
 
 void Game::renderGame()

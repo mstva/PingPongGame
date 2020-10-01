@@ -14,6 +14,8 @@ public:
 	void initPaddle();
 	void showPaddle(SDL_Renderer* mRenderer, std::string dir);
 	void movePaddle();
+	Vector2 getPaddlePosRight();
+	Vector2 getPaddlePosLeft();
 	void updatePaddle(float deltaTime, std::string dir);
 
 private:

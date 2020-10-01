@@ -12,6 +12,7 @@ public:
 	void initBall();
 	void showBall(SDL_Renderer* mRenderer);
 	void updateBall(float deltaTime);
+	Vector2 getBallPos();
 
 private:
 	// private ball logic and variables
